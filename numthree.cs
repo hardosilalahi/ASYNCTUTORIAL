@@ -82,39 +82,40 @@ namespace async
             var youser = JsonConvert.DeserializeObject <List<Yuser>>(resourceUno);
             var post = JsonConvert.DeserializeObject<List<Posts>>(resourceDos);
             
-            foreach(var i in youser){
-                var abcd = post.Where(x => x.UserId == i.Id).FirstOrDefault();
-                if(post.Where(x => x.UserId == i.Id).FirstOrDefault() != null){
+            foreach(var i in post){
+                var abcd = youser.Where(x => x.Id == i.UserId).FirstOrDefault();
+                if(abcd != null){
                     result.Add(new numberThree{
-                        UserId = abcd.UserId,
-                        Id = abcd.Id,
-                        Title = abcd.Title,
-                        Body = abcd.Body,
+                        UserId = i.UserId,
+                        Id = i.Id,
+                        Title = i.Title,
+                        Body = i.Body,
                         User = new Yuser{
-                            Id = i.Id,
-                            Name = i.Name,
-                            Username = i.Username,
-                            Email = i.Email,
+                            Id = abcd.Id,
+                            Name = abcd.Name,
+                            Username = abcd.Username,
+                            Email = abcd.Email,
                             Address = new address{
-                                Street = i.Address.Street,
-                                Suite = i.Address.Suite,
-                                City = i.Address.City,
-                                Zipcode = i.Address.Zipcode,
+                                Street = abcd.Address.Street,
+                                Suite = abcd.Address.Suite,
+                                City = abcd.Address.City,
+                                Zipcode = abcd.Address.Zipcode,
                                 Geo = new geometrics{
-                                    Lat = i.Address.Geo.Lat,
-                                    Lng = i.Address.Geo.Lng
+                                    Lat = abcd.Address.Geo.Lat,
+                                    Lng = abcd.Address.Geo.Lng
                                 }
                             },
-                            Phone = i.Phone,
-                            Website = i.Website,
+                            Phone = abcd.Phone,
+                            Website = abcd.Website,
                             Company = new Companies{
-                                Name = i.Company.Name,
-                                CatchPhrase = i.Company.CatchPhrase,
-                                Bs = i.Company.Bs
+                                Name = abcd.Company.Name,
+                                CatchPhrase = abcd.Company.CatchPhrase,
+                                Bs = abcd.Company.Bs
                             }
                         }
                     });
                 }
+
             }
 
             var text = JsonConvert.SerializeObject(result);

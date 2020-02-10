@@ -31,12 +31,12 @@ namespace async
         }
 
         public override void Parse(Response response){
-            foreach(var titleLink in response.Css("li.headline__big__img")){
-                string link = titleLink.Css("img[src]").First().Attributes["src"];
-                string title = titleLink.Css("img[alt]").First().Attributes["alt"];
+            foreach(var titleLink in response.Css("div.slick-track")){
+                string link = titleLink.Css("a[href]").First().Attributes["href"];
+                // string title = titleLink.Css("img[alt]").First().Attributes["alt"];
 
                 Console.WriteLine(link);
-                Console.WriteLine(title);
+                // Console.WriteLine(title);
             }
         }
     }

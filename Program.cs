@@ -17,10 +17,10 @@ namespace async
         {
             // var result = await Get();
 
-            // Console.WriteLine(await NumberTres());
+            Console.WriteLine(await NumberTres());
 
-            var scrape = new BlogScraper();
-            await scrape.StartAsync();
+            // var scrape = new BlogScraper();
+            // await scrape.StartAsync();
         }
     }
 }
