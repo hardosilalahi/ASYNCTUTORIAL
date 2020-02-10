@@ -1,0 +1,14 @@
+/Users/user/async/bin/Debug/netcoreapp3.1/async
+/Users/user/async/bin/Debug/netcoreapp3.1/async.deps.json
+/Users/user/async/bin/Debug/netcoreapp3.1/async.runtimeconfig.json
+/Users/user/async/bin/Debug/netcoreapp3.1/async.runtimeconfig.dev.json
+/Users/user/async/bin/Debug/netcoreapp3.1/async.dll
+/Users/user/async/bin/Debug/netcoreapp3.1/async.pdb
+/Users/user/async/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/user/async/obj/Debug/netcoreapp3.1/async.csprojAssemblyReference.cache
+/Users/user/async/obj/Debug/netcoreapp3.1/async.AssemblyInfoInputs.cache
+/Users/user/async/obj/Debug/netcoreapp3.1/async.AssemblyInfo.cs
+/Users/user/async/obj/Debug/netcoreapp3.1/async.csproj.CopyComplete
+/Users/user/async/obj/Debug/netcoreapp3.1/async.dll
+/Users/user/async/obj/Debug/netcoreapp3.1/async.pdb
+/Users/user/async/bin/Debug/netcoreapp3.1/IronWebScraper.dll
