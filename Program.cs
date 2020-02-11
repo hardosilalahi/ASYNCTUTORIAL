@@ -12,13 +12,13 @@ using System.IO;
 
 namespace async
 {
-    class Program : Fetcher
+    class Program
     {
         static async Task Main(string[] args)
         {
             // var result = await Get();
 
-            // Console.WriteLine(await NumberTres());
+            // Console.WriteLine(await numthree.NumberTres());
 
             // Console.WriteLine(await numfour.movieKeanu());
             // Console.WriteLine(await numfour.movieIndonesia());

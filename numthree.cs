@@ -51,26 +51,8 @@ namespace async
         public Yuser User{get; set;}
     }
 
-    public class Fetcher
+    public class numthree
     {
-        // public static async Task<List<Yuser>> Get(){
-        //     var client = new HttpClient();
-        //     var result = await client.GetStringAsync("https://jsonplaceholder.typicode.com/users");
-
-        //     var user = JsonConvert.DeserializeObject <List<Yuser>>(result);
-
-        //     return user;
-        // }
-
-        // public static async Task<List<Posts>> Post(){
-        //     var client = new HttpClient();
-        //     var result = await client.GetStringAsync("https://jsonplaceholder.typicode.com/posts");
-            
-        //     var post = JsonConvert.DeserializeObject<List<Posts>>(result);
-
-        //     return post;
-        // }
-
         public static async Task<string> NumberTres(){
 
             var client = new HttpClient();
