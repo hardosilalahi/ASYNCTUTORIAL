@@ -86,6 +86,8 @@ namespace async
             Console.WriteLine(String.Join(", ", Absen));
         }
         //end of num2
+
+        
     }
 }
 
