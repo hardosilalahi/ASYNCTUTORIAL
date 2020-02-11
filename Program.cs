@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿// using Internal;
+using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,7 +18,12 @@ namespace async
         {
             // var result = await Get();
 
-            Console.WriteLine(await NumberTres());
+            // Console.WriteLine(await NumberTres());
+
+            // Console.WriteLine(await numfour.movieKeanu());
+            // Console.WriteLine(await numfour.movieIndonesia());
+            // Console.WriteLine(await numfour.movieRobertHolland());
+            // Console.WriteLine(await numfour.movie2016());
 
             // var scrape = new BlogScraper();
             // await scrape.StartAsync();
