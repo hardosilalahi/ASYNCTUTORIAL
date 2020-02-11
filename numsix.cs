@@ -23,17 +23,16 @@ namespace async
             foreach(var titleLink in response.Css("ul.slides > li > a")){
                 string link = titleLink.Attributes["href"];
                 this.Request(link, ParseLagi);
-                // Console.WriteLine(link);
             }
         }
         public void ParseLagi(Response response){
-            string title = response.Css("div.movie-info-title").First().InnerText.Replace("\t", "");
+            string title = response.Css("div.movie-info-title").First().InnerTextClean;
             Console.WriteLine(title);
             foreach(var i in response.Css("div.movie-add-info > ul")){
                 string info = i.InnerText.Replace("\t","");
                 Console.WriteLine(info);
             }
-            string synopsis = response.Css("div.movie-synopsis").First().InnerText.Replace("\t", "");
+            string synopsis = response.Css("div.movie-synopsis").First().InnerTextClean;
             
             Console.WriteLine(synopsis);
         }

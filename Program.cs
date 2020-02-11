@@ -27,6 +27,9 @@ namespace async
             var scrape = new numsix();
             await scrape.StartAsync();
 
+            // var scrape2 = new numfive();
+            // await scrape2.StartAsync();
+
             //start of num2
         //     var numTwo = await numtwo.Fetch();
         //     Console.WriteLine("gaji karyawan lebih dari Rp15.000.000 :");
