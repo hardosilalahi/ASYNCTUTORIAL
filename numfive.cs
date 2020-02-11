@@ -20,8 +20,10 @@ namespace async
 
         public override void Parse(Response response){
             foreach(var titleLink in response.Css("a.headline__thumb__link")){
+
                 string link = titleLink.Attributes["href"];
                 string title = titleLink.InnerTextClean;
+                
                 Console.WriteLine($"Title: {title}");
                 Console.WriteLine($"Link: {link}");
             }
