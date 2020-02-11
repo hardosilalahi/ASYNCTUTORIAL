@@ -11,8 +11,8 @@ using System.Linq;
 
 namespace async
 {
-    public class BlogScraper : WebScraper 
-    {
+    // public class BlogScraper : WebScraper 
+    // {
         // public override void Init(){
         //     this.LoggingLevel = WebScraper.LogLevel.All;
         //     this.Request("https://blog.scrapinghub.com/", Parse);
@@ -25,19 +25,19 @@ namespace async
         //         Console.WriteLine(link);
         //     }
         // }
-        public override void Init(){
-            this.LoggingLevel = WebScraper.LogLevel.All;
-            this.Request("https://www.kompas.com/", Parse);
-        }
+    //     // public override void Init(){
+    //     //     this.LoggingLevel = WebScraper.LogLevel.All;
+    //     //     this.Request("https://www.kompas.com/", Parse);
+    //     // }
 
-        public override void Parse(Response response){
-            foreach(var titleLink in response.Css("div.slick-track")){
-                string link = titleLink.Css("a[href]").First().Attributes["href"];
-                // string title = titleLink.Css("img[alt]").First().Attributes["alt"];
+    //     // public override void Parse(Response response){
+    //     //     foreach(var titleLink in response.Css("div.slick-track")){
+    //     //         string link = titleLink.Css("a[href]").First().Attributes["href"];
+    //     //         // string title = titleLink.Css("img[alt]").First().Attributes["alt"];
 
-                Console.WriteLine(link);
-                // Console.WriteLine(title);
-            }
-        }
-    }
+    //     //         Console.WriteLine(link);
+    //     //         // Console.WriteLine(title);
+    //     //     }
+    //     // }
+    // }
 }
